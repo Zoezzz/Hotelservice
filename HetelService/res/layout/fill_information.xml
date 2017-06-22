@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background3">
+    
+    <TextView
+        android:id="@+id/fill_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_name"
+        android:textColor="#FF0000"
+        android:textSize="20pt"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/chosen_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fill_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/chosen_room"
+        android:textSize="12pt" />
+    
+    <TextView
+        android:id="@+id/number_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chosen_room"
+        android:layout_alignTop="@id/chosen_room"
+        android:layout_marginLeft="15dp"
+        android:text="@string/number_room"
+        android:textSize="12pt" />
+    
+    <LinearLayout 
+        android:id="@+id/information1"
+        android:layout_below="@id/chosen_room"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+        	android:id="@+id/name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/name"
+        	android:textSize="12pt"
+        	/>
+        
+        <EditText
+            android:id = "@+id/edit_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="请填写姓名"
+            android:textSize ="12pt"
+            />
+        
+         <TextView
+        	android:id="@+id/gender"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="83dp"
+        	android:text="@string/gender"
+        	android:textSize="12pt"
+        	/>
+         
+         <Spinner
+             android:id="@+id/choose_gender"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:entries="@array/gender_spinner"
+             />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/ID_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/information1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ID_number"
+        android:textSize="12pt"
+        />
+    
+    <EditText
+        android:id = "@+id/edit_Id_number"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ID_number"
+        android:layout_alignTop="@id/ID_number"
+        android:layout_alignBaseline="@id/ID_number"
+        android:hint="请输入身份证号"
+        android:textSize ="12pt"
+        android:inputType="number"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/information2"
+        android:layout_below="@id/ID_number"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView
+        	android:id="@+id/data"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_vertical"
+        	android:text="@string/data"
+        	android:textSize="12pt"/>
+        
+        <DatePicker
+            android:id="@+id/datapick1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            />
+               
+         <TextView
+        	android:id="@+id/datato"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center_vertical"
+        	android:text="@string/data_to"
+        	android:textSize="12pt" />
+            
+         <DatePicker
+            android:id="@+id/datapick2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"/>
+     
+    </LinearLayout>
+       
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/information2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/note"
+        android:textSize="12pt"/>
+    
+    <EditText
+        android:id ="@+id/edit_note"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/note"
+        android:layout_toRightOf="@id/note"
+        android:layout_marginLeft="8dp"
+        android:textSize ="12pt"
+        android:hint="请输入邮箱地址"
+        android:inputType="textEmailAddress"/>
+    
+    <Button 
+        android:id ="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height ="wrap_content"
+        android:layout_below="@id/note"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="60dp"
+        android:text ="@string/submit"
+        android:textSize = "12pt"
+        android:alpha="0.7"
+        />
+    
+     <Button 
+        android:id ="@+id/finish"
+        android:layout_width="200dp"
+        android:layout_height ="wrap_content"
+        android:layout_alignTop="@id/submit"
+        android:layout_toRightOf="@id/submit"
+        android:layout_marginLeft="40dp"
+        android:text ="@string/finish"
+        android:textSize = "12pt"
+        android:alpha="0.7"
+        />
+  
+   
+</RelativeLayout>

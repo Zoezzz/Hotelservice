@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Service_System</string>
+    <string name="action_settings">Settings</string>
+    <string name="hotel_service">Hotel Check in System</string>
+    <string name="hotel_service_name">酒店登记入住系统</string>
+    
+    <string name="room101">101</string>
+    <string name="room102">102</string>
+    <string name="room103">103</string>
+    <string name="room104">104</string>
+    <string name="room105">105</string>
+    
+    <string name="room201">201</string>
+    <string name="room202">202</string>
+    <string name="room203">203</string>
+    <string name="room204">204</string>
+    <string name="room205">205</string>
+    
+    <string name="room301">301</string>
+    <string name="room302">302</string>
+    <string name="room303">303</string>
+    <string name="room304">304</string>
+    <string name="room305">305</string>
+    
+    <string name="pay_attention">注：1-2楼为双人间 3楼为四人间</string>
+    <string name="register">确&#160; &#160;认&#160; &#160;入&#160; &#160;住</string>
+    
+    <string name="fill_name">入住信息填写</string>
+    <string name="chosen_room">已选房间：</string>
+    <string name="number_room">   </string>
+    
+    <string name="number_people">入住人数：</string>
+    <string name="name">姓 &#160; &#160; &#160; &#160;名：</string>
+    <string name="gender">性 &#160; &#160; &#160; &#160;别：  </string>
+    <string name="ID_number">证件号码：  </string>
+    <string name="data">入住日期： </string>
+    <string name="data_to"> &#160; &#160;&#160; &#160;至  &#160; &#160;&#160; &#160; </string>
+    <string name="note">邮&#160; &#160; &#160; &#160;箱：</string>
+    
+    <string-array name="gender_spinner">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+    
+    <string name="submit">保存提交 </string>
+    <string name="finish">确认返回 </string>
+    
+     
+    
+    
+
+</resources>
